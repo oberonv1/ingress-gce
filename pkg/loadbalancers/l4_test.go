@@ -2263,7 +2263,7 @@ func TestWeightedILB(t *testing.T) {
 			}
 			backedHasWeighted := (bs.LocalityLbPolicy == backends.WeightedLocalityLbPolicy)
 			if tc.wantWeighted != backedHasWeighted {
-				t.Errorf("Enexpected BackendService LocalityLbPolicy value %v, got weighted: %v, want weighted: %v", bs.LocalityLbPolicy, tc.wantWeighted, backedHasWeighted)
+				t.Errorf("nexpected BackendService LocalityLbPolicy value %v, got weighted: %v, want weighted: %v", bs.LocalityLbPolicy, tc.wantWeighted, backedHasWeighted)
 			}
 		})
 	}
